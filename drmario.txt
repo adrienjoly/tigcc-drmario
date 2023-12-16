@@ -1,0 +1,60 @@
+___________________________________________
+
+ Dr.Mario92+ version 1.0 Beta (Revision 0)
+___________________________________________
+                                   by RØLy!
+
+=[iNTRO]===================================
+Dr.Mario pour Ti92+ est un remake (une copie ?) du célèbre jeu de nintendo. Il est le fruit de nombreuses heures de travail
+sous TIGCC, vu que c'est seulement la 2ème fois que je programme un jeu en C pour la Ti. Les sprites ont été copiés en niveaux de gris à partir d'un émulateur Game Boy.
+
+=[jEU]=====================================
+Le but du jeu est de faire un max de points en éliminant tous les virus de l'écran. Ceux ci sont reconnaissable par leur
+animation sur la grille de jeu. Pour les éliminer il suffit de les lier, avec des pillules qui tombent du haut de l'écran, à
+raison de 4 (au moins) de couleur identique et alignés verticalement ou horizontalement.
+
+=[iNSTALLATION/eXECUTION]==================
+Il suffit de copier DRMARIO.9XZ sur votre ti92+ et de le lancer en tapant drmario(). Il est possible que vous ayez besoin d'installer le patch HW2 si le programme refuse de s'éxécuter. Vérifiez aussi que vous avez assez de mémoire RAM disponible. Au pire, archivez Dr.Mario pour en libérer, mais vous ne pourrez plus sauvegarder votre partie ni vos meilleurs scores.
+
+=[cONTROLES]===============================
+Les pillules se controlent avec les touches directionnelles: gauche et droite pour se déplace, bas pour faire tomber rapidement et haut pour faire tourner la pillule dans le sens vertical ou horizontal. Pour accéder au menu de jeu il faut presser la touche MODE, et ECHAP (ESC) quitte Dr.Mario directement après avoir enregistré la partie en cours (si l'option est activée et que le prog n'est pas archivé).
+
+=[sPECIFICATIONS]==========================
+-programme nostub de 20k
+-interface en niveaux de gris
+-sprites animés (virus et dr mario)
+-sauvegarde des 3 meilleurs scores (seulement si le prog est désarchivé)
+-20 niveaux de difficulté (3 à 60 virus)
+-options du menu de jeu (MODE):
+   -option sauvegarde automatique de la partie à la sortie du prog
+   -option fond de grille de jeu (=> contraste, vitesse)
+   -complexité fond d'écran (=> temps de chargement du prog, fréquence de l'affichage en gris)
+   -complexité animations (=> vitesse)
+   -fréquence du timer (=> vitesse du jeu de 1 à 5)
+
+=[bUGS cONNUS!]============================
+-Le jeu est ralenti quand il y a beaucoup de virus animés sur la grille de jeu (consultez les options)
+-L'éxécution du jeu sous TiOS après l'avoir lancé sous Doors provoque une erreur de référence. Le problème se contourne facilement en l'archivant puis en le désarchivant ensuite mais je n'ai pas trouvé d'explication à ce phénomène.
+-Le jeu est plus rapide sur HW2 (différence observée sous VirtualTI)
+
+=[aIDEZ-mOI]===============================
+J'éspère que le jeu vous plait, j'ai eu beaucoup de plaisir à le programmer et je serais heureux de pouvoir l'améliorer. C'est pourquoi je vous demande de m'écrire si vous rencontrez un bug, ou tout simplement pour me proposer des idées ou des commentaires.
+J'aimerais bien comprendre d'où vient le problème avec Doors (cf ci-dessus), de plus je cherche un moyen de réguler automatiquement la fréquence du timer en fonction de la version hardware de la Ti utilisée. Merci de m'avertir si vous connaissez une solution à mes problèmes. En contrepartie je suis prêt à fournir le code source TIGCC du programme.
+
+Adresse e-mail: roly@fr.st
+Site web: www.roly.fr.st
+
+=[fAQ]=====================================
+* Pourquoi Dr.Mario n'est pas compatible avec la Ti89 ?
+-D'abord, la grille de jeu de 15x8 sprites 8x8 ne rentre pas sur l'écran rikiki de la 89, il aurait fallu redimensionner les sprites. Non seulement c'est casse couilles, mais en plus c'est pas beau.
+-Ensuite, il existe déjà un Dr.Mario sur la 89. Il est en noir et blanc mais de très bonne qualité.
+-Enfin, la réponse que je préfère: pourquoi je me ferais chier à respecter la compatibilité avec la 89 alors que les programmeurs parresseux de jeux pour 89 ne se donnent pas la peine de les porter à la 92+ ? Il est pourtant plus simple d'adapter un jeu pour petit écran vers un grand écran (quitte à laisser des marges) que de faire le contraire. En plus TIGCC propose des constantes clavier qui s'adaptent automatiquement à chaque calculatrice.
+-Une dernière raison, pour le fun: ya déjà assez de jeux sur 89, vive les 92+ et leur grand écran !!!
+
+=[rEMERCIEMENTS]===========================
+-Squale pour son EXCELLENT tutorial TIGCC (je pèse mes mots);
+-Respect à toute l'équipe TIGCC bien entendu, vous êtes les meilleurs !
+-Rusty Wagner pour son VirtualTI sans lequel la programmation TIGCC serait un enfer;
+-Nintendo pour avoir créé ce super jeu;
+-Ti-Fr pour héberger mes jeux Frogger, Dr.Mario et mon editeur de sprites "C Sprite" et pour permettre leur renomée;
+-et toute la communauté Ti-fr.
