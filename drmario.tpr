@@ -1,0 +1,17 @@
+[Settings]
+Project Name=DrMario
+GCC Switches=-O2 -Wall -W
+Assembler Switches=-k -g -t
+Linker Switches=
+BSR Patch=1
+Pack=0
+Packed Variable=drmdata
+Archive=0
+GNU Linker Switches=
+Debug Info=0
+Standard Library=1
+Command Line=
+Post-Build Process=
+
+[Included Files]
+C File 1=drmario.c
