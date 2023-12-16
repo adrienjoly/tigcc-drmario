@@ -24,7 +24,7 @@ From a PC:
 2. On the calculator, press the `2nd` and `varlink` keys to find `drmario.9xz`.
 3. Start it by pressing enter on it.
 
-## Troubleshooting
+### Troubleshooting
 
 - Helpful tips in case of connection issues: [TI-89 USB Connection Issues](https://www.cemetech.net/projects/uti/viewtopic.php?t=7446&start=0)
 - [Firmware update process](https://education.ti.com/en/customer-support/knowledge-base/other-graphing/troubleshooting-messages-unexpected-results/12047)
